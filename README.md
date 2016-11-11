@@ -46,3 +46,19 @@ definir el editor, para ediciones complejas:
 EDITOR = '/usr/bin/emacs'
 <!-- var hola = {title: 'mi primera edicion'} -->
 <!-- edit hola -->
+
+
+## Inconvenientes en nombrs de collections
+- version es una palabra reservada
+  db.version
+  alternativa es: db.getCollection('version')
+  db.getCollection('users').find()
+
+- en javascript: x.y es igual a x[y]:
+  db.version es lo mismo que db[version]
+
+##Inserciones
+### Validaciones
+  - al insertar revisa que los ids no se repitan
+  - los documentos deben ser menores de 16MB
+  - para ver el tamaño: Object.bsonsize(documento)

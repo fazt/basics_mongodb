@@ -29,3 +29,21 @@ var post = {
 db.blog.insert(post);
 post.comments = [];
 db.blog.update({title:/post/}, post);
+
+
+// Actualizando documento
+db.people.insert({
+  "name": "Fabian",
+  "friends": 0,
+  "enemies": 3
+});
+
+var fabian = db.people.find({"name": /abian/});
+fabian.relationships = {"friends": fabian.friends, "enemies": fabian.enemies };
+fabian.username = fabian.name;
+
+delete fabian.friends;
+delete fabian.enemies;
+delete fabian.name;
+
+db.users.update({"name": "Fabian"},fabian);
