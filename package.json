@@ -1,0 +1,23 @@
+{
+  "name": "basics_mongodb",
+  "version": "1.0.0",
+  "description": "bson add hoc querys mongodb indexing replica set sharding - vertical scaling, horizontal scaling",
+  "main": "dataTypes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabianNCDev/basics_mongodb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabianNCDev/basics_mongodb/issues"
+  },
+  "homepage": "https://github.com/FabianNCDev/basics_mongodb#readme",
+  "dependencies": {
+    "mongoose": "^4.6.7"
+  }
+}
