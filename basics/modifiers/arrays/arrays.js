@@ -23,7 +23,6 @@ db.blog.post.update({title: "A blog Post"}, {
   }
 });
 
-
 //  multiple values in operation
 db.stock.tickes.insert({name: "test"});
 db.stock.tickes.update({name: "test"}, {"$push": {"hourly":{"$each": [1,2,3,4,5,6,7,8,9]}}});
@@ -50,4 +49,4 @@ db.movies.find({"genre": "action"}, {
       "$sort": {"rating": -1}
     }
   }
-})
+});

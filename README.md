@@ -1,3 +1,15 @@
+- shell
+- crud
+- modifiers: that are atomic operations with data
+
+## Considerations
+- the most part of the keys, if does not exist MDB will creat it
+- MDB does not accept messages longer than 48 MB
+- you can use continueOnError after an a insert failure
+- all documents must be smaller than 16MB
+-
+
+
 bson
 add hoc querys
 mongodb indexing
@@ -60,5 +72,3 @@ EDITOR = '/usr/bin/emacs'
 ##Inserciones
 ### Validaciones
   - al insertar revisa que los ids no se repitan
-  - los documentos deben ser menores de 16MB
-  - para ver el tamaño: Object.bsonsize(documento)
